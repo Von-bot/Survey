@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <title>Server Satisfaction Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<h1 id="title">Server Satisfaction Survey</h1>
+<h5>Kindly fill the details honestly and without bias</h5>
+  <form id="survey-form" method="post" action='https://survey-form'>
+  <div class="form">
+<fieldset>
+  <label>Enter Your Username</label>
+ <label id="name-label" for="name"> <input type="text" id="name" name="name" placeholder="name" required /></label>
+
+</fieldset>
+<label for="dropdown">What Do You Like Most About This Server?
+<select id="dropdown" name="dropdown">
+ <option value="">(select one)</option>
+<option value="1">Community</option>
+<option value="2">Game Guides</option>
+<option value="3">Events</option>
+<option value="4">Other</option>
+</select>
+  </label>
+  <fieldset>
+<label> Would You Reccommend This Server To Others?</label> 
+<label for="Yes"><input value="Yes"  name="radio-group"  type="radio" class="inline"/> Yes</lable>
+<label for="No"><input value="No"  name="radio-group"  type="radio" class="inline"/> No</lable>
+</fieldset>
+
+<label for="checkbox"> What Would You Like More? (check all that apply)</label>
+
+<p> <label><input value="More Events" name="More Events"  type="checkbox" class="inline"/> More Events</label>
+</p> <p> <label><input value="Mudae Challenges" name="Mudae Challenges"  type="checkbox" class="inline"/> Mudae Challenges</label></p>
+<p> <label><input value="Gacha" name="Gacha"  type="checkbox" class="inline"/> Focus On Games Outside Of Gacha</label>
+</p> 
+<fieldset>
+       <label>Any comments or suggestions? <p>
+         <textarea placeholder="Enter Your Suggestions Here!..."></textarea>
+       </label></p>
+       <button id="submit">Submit</button>
+    </fieldset>
+    </main>
+    </div>
+
+</body>
+</html>
